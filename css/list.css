@@ -122,7 +122,7 @@ figure img {
   background: url(../img/ico-acorn_bw.png) no-repeat center / cover;
   font-weight: 700;
   text-align: center;
-  color: #000;
+  color: #888;
   transition: all 0.5s;
   animation: acorn 1s infinite alternate;
   box-sizing: border-box;
@@ -146,45 +146,61 @@ figure img {
   position: relative;
   width: 100%;
   padding: 0;
-  background: url(../img/web-footer.png) no-repeat center top / cover;
-}
-#mop .mopTxt {
-  position: absolute;
-  top: 34%;
-  left: 46%;
-  font-weight: 300;
-  letter-spacing: 1.4px;
-  color: #9baa94;
-}
-#mop .mopTxt span {
-  display: inline-block;
 }
 #mop .copyright {
-  position: absolute;
-  bottom: 50px;
+ padding: 40px 0;
   width: 100%;
   text-align: center;
   letter-spacing: 1.4px;
   font-size: 1.4rem;
   font-weight: 300;
-  color: #aaa;
+  color: #aaa;    background: #222;
 }
 
 /* 세부정보들 */
-
-/* info */
+#info{
+    padding: 80px 0;
+    background: #f5f5f5;
+}
 #info h2 {
   width: 0;
   height: 0;
   margin: 0;
 }
 #info figure {
-  /*	position: relative;*/
+  width: 100px;
+}
+#info .name {
+  margin: 0 4em 0 0;
+  text-align: right;
+}
+#info .name strong {
+  display: block;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  font: 3rem/1 "Lato", sans-serif;
+}
+#info .name a {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+#info .name a:hover {
+  color: #72a15c;
+  animation: textMoving 0.5s infinite alternate;
+}
+/* info */
+/*
+#info h2 {
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+#info figure {
   width: 280px;
 }
 #info figure img {
-  /* -webkit-filter: grayscale(100%); */
-  /* filter: gray; */
 }
 #info .name {
   margin: 4em 4em 0 0;
@@ -207,6 +223,7 @@ figure img {
   color: #72a15c;
   animation: textMoving 0.5s infinite alternate;
 }
+  */
 @keyframes textMoving {
   0% {
     padding-right: 0px;
@@ -216,9 +233,12 @@ figure img {
   }
 }
 #info .infoTxt {
+     margin-top: 40px;
+    /*
   margin-top: calc(100vh - 840px);
   display: flex;
   justify-content: space-between;
+  */
 }
 #info .infoTxt > * {
   width: 45%;
@@ -250,7 +270,7 @@ figure img {
   font-size: 1rem;
 }
 #info .infoTxt .ddInner p:first-child {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 #info .infoTxt .ddInner .descWr {
   padding-top: 0.5em;
@@ -383,7 +403,6 @@ figure img {
 
   /* mop */
   #mop {
-    height: 100vh;
   }
 }
 
