@@ -217,6 +217,13 @@ hr {
     background-size: auto 100%;
     background-position: 100%;
 }
+.block-hero-2, .block-hero-2 .columns {
+    display: -ms-flexbox;
+    display: flex
+;
+    -ms-flex-align: center;
+    align-items: center;
+}
 .block .name {
     -ms-flex: 0 0 45%;
     flex: 0 0 45%;
