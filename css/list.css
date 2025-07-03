@@ -732,7 +732,7 @@ h1, h2, h3, h4, h5,
   font-weight: 800; }
   @media (max-width: 767.98px) {
     .slider-text h1 {
-      font-size: 40px; } }
+      font-size: 32px; } }
 
 .slider-text h2 {
   font-weight: 800; }
@@ -1173,6 +1173,7 @@ h1, h2, h3, h4, h5,
   transition: all 0.3s ease; }
   @media (max-width: 767.98px) {
     .project .overlay {
+      background-color: #000;
       opacity: .2; 
     }
   }
@@ -1769,6 +1770,9 @@ h1, h2, h3, h4, h5,
   .p-display{
     display: none !important;
   }
+  .slider-text h2{
+        font-size: 1.25rem;
+  }
   .container{
     padding-top: 50px;
   }
@@ -1790,6 +1794,9 @@ h1, h2, h3, h4, h5,
   }
   .page{
     margin-bottom: 4em;
+  }
+  #page-1 .name{
+    margin-left:2em
   }
   
 }
